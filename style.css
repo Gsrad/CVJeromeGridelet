@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'policeDl';
+    src        : url('Vogue.ttf');
+}
+
+body
+{
+  font-family     : 'policeDl', Arial, serif;
+  word-wrap       : break-word;
+  background-color: #F5F5F5;
+  margin-top      : 0;
+  margin-bottom   : 0;
+ }
+
+.perso
+{
+  display: flex;
+  width  : 100%;
+}
+
+.nav
+{
+    width           : 25%;
+    color           : #F5F5F5;
+    background-color: #006064;
+    margin-right    : 30px;
+    text-align      : justify;
+    height: 100%;
+}
+
+
+.image
+{
+  height: 150px;
+}
+
+.photo
+{
+  height       :100%;
+  border-radius: 50%;
+  display      : block;
+  border       : 2px #FFB74D solid;
+  margin-right : auto;
+  margin-left  : auto;
+  margin-top   : 30px;
+  filter       : grayscale(1);
+}
+.photo:hover
+{
+    filter : grayscale(0);
+}
+.colonne
+{
+  height          : 40px;
+  background-color: #F5F5F5;
+}
+.colonne p
+{
+  color      : #006064;
+  text-align : center;
+  line-height: 2.9rem;
+  font-size  : 25px;
+
+}
+
+.texte p
+{
+  margin: 10px;
+  
+}
+.texte .contact
+{
+  border-top   : 1px #FFB74D solid;
+  border-bottom: 1px #FFB74D  dashed;
+}
+.texte .contact:nth-child(1)
+{
+  border-top: none;
+}
+
+.footer
+{
+  display        : flex;
+  justify-content: center;
+}
+.footer img
+{
+  height       : 50px;
+  margin-top   : 20px;
+  margin-bottom: 20px;
+  margin-right : 7px;
+  margin-left  : 7px;
+}
+
+
+.section
+{
+    display         : flex;
+    color           : #212121;
+    background-color: #F5F5F5;
+    flex-direction  : column;
+    justify-content : space-between;
+}
+.section-element
+{
+  margin-left   : 50px;
+  display       : flex;
+  flex-direction: column;
+}
+
+.element
+{
+  display        : flex;
+  justify-content: space-between;
+}
+.section p
+{
+  margin: 0px;
+}
+
+h1
+{
+  margin-left  : 100px;
+  font-size    : 50px;
+  margin-bottom: 10px;
+}
+
+h1 strong
+{
+  color: #006064 ;
+}
+h2
+{
+  margin-left: 120px;
+  margin-top : 10px;
+  font-size  : 30px;
+}
+h2 strong
+{
+  border-bottom: 1px #FFB74D solid;
+}
+
+.titre
+{
+  font-size    : 20px;
+  border-bottom: 1px #FFB74D solid;
+  margin-bottom: 18px;
+  padding-left : 30px;
+}
+
+.element-left
+{
+  width : 50%;
+  height: 115px;
+}
+.element-left p:nth-child(2)
+{
+  margin-left: 22px;
+}
+.element-right
+{
+  
+  width    : 50%;
+  height   : 115px;
+  font-size: 20px;
+}
+.element-right p:nth-child(1)
+{
+  font-size  : 17px;
+  margin-left: 5px;
+}
+.element-right p:nth-child(2)
+{
+  font-size  : 13px;
+  margin-top : 5px;
+  margin-left: 5px;
+}
+
+.recommend
+{
+  display: flex;
+}
+.recommend-left, .recommend-right
+{
+  width : 50%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+.recommend p
+{
+  margin-bottom: 5px;
+}
+.recommend strong
+{
+  font-size: 15px;
+}
+@media screen and (max-width: 1024px)
+{
+.colonne p
+{
+  font-size: 20px;
+}
+.texte
+{
+  font-size: 14px;
+}
+.image
+	{
+	height: 100px;
+	}
+  .footer
+  {
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+  }
+  h1
+  {
+  	font-size: 30px;
+  }
+  h2
+  {
+  	font-size: 20px;
+  }
+    .element
+    {
+        flex-direction: column;
+    }
+    .element-left
+    {
+      height: 100%;
+      margin-bottom: 10px;
+    }
+   
+    .element-right
+    {
+      height: 100%;
+      margin-bottom: 20px;
+      margin-left: 40px;
+    }
+    .recommend
+    {
+      flex-direction: column;
+
+    }
+}
