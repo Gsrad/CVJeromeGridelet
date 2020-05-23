@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'policeDl';
-    src        : url('Vogue.ttf');
-}
-
 body
 {
   font-family: 'Roboto', sans-serif;
@@ -217,7 +212,10 @@ h2 strong
 }
 @media screen and (max-width: 1024px)
 {
-
+html, body
+{
+  width: 100%;
+}
 .perso
 {
   flex-direction: column-reverse;
@@ -279,7 +277,8 @@ h2 strong
       height: 100%;
       width: 100%;
       margin-bottom: 20px;
-      margin-left: 40px;
+      padding-left: 20px;
+      
     }
     .recommend
     {
