@@ -225,6 +225,7 @@ h2 strong
 .nav
 {
   width: 100%;
+  margin:0;
 }
 .colonne p
 {
@@ -238,6 +239,12 @@ h2 strong
 	{
 	display: none;
 	}
+.footer img
+{
+  height       : 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
  
  .section .image
     {
@@ -263,26 +270,24 @@ h2 strong
     .element-left
     {
       height: 100%;
+      width: 100%;
       margin-bottom: 10px;
     }
    
     .element-right
     {
       height: 100%;
+      width: 100%;
       margin-bottom: 20px;
       margin-left: 40px;
     }
     .recommend
     {
       flex-direction: column;
-
     }
-    .footer img
-{
-  height       : 60px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-   
+    .recommend-left .recommend-right
+    {
+      width: 100%;
+    }
 
 }
