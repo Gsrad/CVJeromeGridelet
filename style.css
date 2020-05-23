@@ -252,7 +252,10 @@ html, body
       visibility: visible;
       margin-bottom: 50px;
         }
- 
+ h1, h2 
+ {
+  margin-left: 0;
+ }
  h1
  {
   font-size: 35px;
