@@ -236,7 +236,7 @@ h2 strong
 }
 .nav-element:nth-child(1)
 	{
-	visibility: collapse;
+	display: none;
 	}
  
  .section .image
@@ -279,7 +279,7 @@ h2 strong
     }
     .footer img
 {
-  height       : 80px;
+  height       : 60px;
   margin-left: 10px;
   margin-right: 10px;
 }
