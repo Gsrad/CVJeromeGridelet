@@ -70,8 +70,11 @@ a{
 
 .texte p
 {
-  margin: 10px;
-  
+  margin: 25px;
+}
+.texte i 
+{
+  margin-right: 15px;
 }
 .texte .contact
 {
@@ -262,26 +265,20 @@ html, body
     {
         flex-direction: column;
     }
-    .element-left
-    {
-      height: 100%;
-      width: 100%;
-      margin-bottom: 10px;
-      margin-left: 0;
-    }
+    
    
-    .element-right
+    .element-left, .element-right
     {
       height: 100%;
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       margin-left: 0;
     }
     .recommend
     {
       flex-direction: column;
     }
-    .recommend-left .recommend-right
+    .recommend-left, .recommend-right
     {
       width: 100%;
     }
