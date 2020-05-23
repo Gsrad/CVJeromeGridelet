@@ -201,16 +201,26 @@ h2 strong
 .recommend p
 {
   margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.recommend a
+{
+  color: #212121
 }
 .recommend strong
 {
   font-size: 15px;
 }
+.section .image
+{
+  visibility: collapse;
+}
 @media screen and (max-width: 1024px)
 {
+
 .perso
 {
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 .nav
 {
@@ -224,19 +234,28 @@ h2 strong
 {
   font-size: 14px;
 }
-.image
+.nav-element:nth-child(1)
 	{
-	
+	visibility: collapse;
 	}
-  
-  h1
-  {
-  	font-size: 30px;
-  }
-  h2
-  {
-  	font-size: 20px;
-  }
+ 
+ .section .image
+    {
+      visibility: visible;
+      margin-bottom: 50px;
+        }
+ h1, h2
+ {
+  margin-left: 10px;
+ }
+ h1
+ {
+  font-size: 35px;
+ }
+ h2
+ {
+  font-size: 25px;
+ }
     .element
     {
         flex-direction: column;
@@ -258,4 +277,12 @@ h2 strong
       flex-direction: column;
 
     }
+    .footer img
+{
+  height       : 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+   
+
 }
