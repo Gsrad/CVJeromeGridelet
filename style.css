@@ -13,7 +13,7 @@ body
   width  : 100%;
 }
 
-.col
+aside
 {
     width           : 25%;
     color           : #F5F5F5;
@@ -24,7 +24,7 @@ body
     flex-direction: column;
 }
 
-.col-element:nth-child(3) /*occupation de l'espace*/
+.aside-element:nth-child(3) /*occupation de l'espace*/
 {
   flex-grow: 1;
 }
@@ -76,32 +76,26 @@ a{
 {
   margin-right: 15px;
 }
-.texte .contact
-{
 
-  border-bottom: 1px #FFB74D  solid;
-}
-.texte .contact:nth-child(1)
-{
-   border-top   : 2px #FFB74D solid;
-}
 
-.footer
+footer
 {
   display        : flex;
   justify-content: center;
+
 }
-.footer img
+footer i
 {
-  height       : 50px;
+  font-size: 70px;
   margin-top   : 20px;
   margin-bottom: 20px;
   margin-right : 7px;
   margin-left  : 7px;
+  color: #F5F5F5;
 }
 
 
-.article
+article
 {
     display         : flex;
     color           : #212121;
@@ -109,7 +103,7 @@ a{
     flex-direction  : column;
     justify-content : space-between;
 }
-.article-element
+section
 {
   margin-left   : 50px;
   display       : flex;
@@ -121,7 +115,7 @@ a{
   display        : flex;
   justify-content: space-between;
 }
-.article p
+article p
 {
   margin: 0px;
 }
@@ -134,7 +128,7 @@ h2
   text-transform: uppercase;
 }
 
-h2 strong /*effet sur le titre*/
+h2 span /*effet sur le titre*/
 {
   color: #006064 ;
 }
@@ -145,7 +139,7 @@ h1
   font-size  : 30px;
   text-transform: uppercase;
 }
-h1 strong /*effet surligné sur le titre*/
+h1 span /*effet surligné sur le titre*/
 {
   border-bottom: 1px #FFB74D solid;
 }
@@ -162,6 +156,12 @@ h1 strong /*effet surligné sur le titre*/
 {
   width : 50%;
   height: 115px;
+}
+.element-left span
+{
+   border-radius: 50%;
+   border       : 2px #FFB74D solid;
+   padding: 2px 1px 1px 2px;
 }
 .element-left p:nth-child(2)
 {
@@ -205,11 +205,11 @@ h1 strong /*effet surligné sur le titre*/
 {
   color: #212121
 }
-.recommend strong
+.recommend span
 {
   font-size: 15px;
 }
-.article .image
+article .image
 {
   visibility: collapse;
 }
@@ -223,7 +223,7 @@ html, body
 {
   flex-direction: column-reverse;
 }
-.col
+aside
 {
   width: 100%;
   margin:0;
@@ -236,18 +236,18 @@ html, body
 {
   font-size: 14px;
 }
-.col-element:nth-child(1) /*image de col est supprimée*/
+.aside-element:nth-child(1) /*image du aside est supprimée*/
 	{
 	display: none;
 	}
-.footer img
+footer i
 {
   height       : 60px;
   margin-left: 10px;
   margin-right: 10px;
 }
  
- .article .image /*l'image invisible apparait lors du responsive*/
+ article .image /*l'image invisible apparait lors du responsive*/
     {
       visibility: visible;
       margin-bottom: 50px;
